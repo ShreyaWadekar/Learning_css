@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        .swing{
+            display: flex;
+            justify-content: center;
+            animation: swing 1.5s ease-in-out infinite alternate;
+           transform-origin:top center;
+           position: relative;
+
+        }
+        .swing img{
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            border: 5px solid black;
+            box-shadow: 2px 2px 2px gray;
+            margin: 20px;
+        }
+        @keyframes swing{
+            0%{transform: rotate(4deg);}
+            100%{transform: rotate(-4deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="swing">
+        <img src="images/gandhiji.webp" alt="gandhiji">
+    </div>
+</body>
+</html>

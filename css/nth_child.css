@@ -1,0 +1,12 @@
+ul{
+    width: 200px;
+    padding: 10px;
+    list-style-type: none;
+    font-weight: 900;
+}
+li{
+    padding: 10px;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+    margin: 10px;
+}
