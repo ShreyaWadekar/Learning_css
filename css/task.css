@@ -1,0 +1,59 @@
+.box
+{
+    font-size: 30px;
+    transition: transform 1s ease; /* Faster flip */
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(23, 139, 240);
+    color: white;
+    display: flex;
+    transform-style: preserve-3d; /* Needed for 3D faces */
+    position: relative;
+}
+.container {
+     display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    perspective: 1000px; /* Enables 3D */
+}
+.front
+{
+    font-size: 50px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    backface-visibility: hidden;
+    justify-self: center;
+}
+.back
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    background-color: aqua;
+    transform: rotateY(180deg);
+    text-align: center;
+    justify-self: center;
+}
+.box1:hover {
+    transform: rotateY(180deg);
+}
+.box2:hover {
+    transform: rotateY(180deg);
+}
+.box3:hover {
+    transform: rotateY(180deg);
+}
+.box4:hover {
+    transform: rotateY(180deg);
+}
