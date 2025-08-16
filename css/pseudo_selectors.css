@@ -1,0 +1,19 @@
+h1{
+    font-size: 50px;
+    color: brown;
+    justify-content: center;
+
+}
+h1:hover{
+    color: blueviolet;
+    font-size: 70px;
+    background-color: aquamarine;
+}
+input:focus{
+    background-color: aquamarine;
+    font-size: 70px;
+    color: blueviolet;
+}
+a:visited{
+    color: blueviolet;
+}
